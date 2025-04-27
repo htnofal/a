@@ -13,14 +13,14 @@ function Header() {
       <div className="flex space-x-4 items-center">
         <button
           type="button"
-          className="p-2 rounded-full hover:bg-gray-100 cursor-pointer"
+          className="p-2 rounded-full hover:bg-gray-200 cursor-pointer"
         >
           <Image src="/topleft.svg" width={30} height={30} alt="icon" />
         </button>
 
         <button
           type="button"
-          className="p-2 rounded-full hover:bg-gray-100 cursor-pointer"
+          className="p-2 rounded-full hover:bg-gray-200 cursor-pointer"
         >
           <Image src="/pen.svg" width={30} height={30} alt="icon" />
         </button>
@@ -31,7 +31,7 @@ function Header() {
             type="button"
             onClick={toggleMenu}
             className={`flex items-center gap-1 p-2 rounded-full cursor-pointer text-black text-base font-semibold focus:outline-none ${
-              isMenuOpen ? 'bg-blue-500 text-white' : 'hover:bg-gray-100'
+              isMenuOpen ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'
             }`}
           >
             Job Role

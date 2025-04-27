@@ -1,12 +1,18 @@
 import Rract from 'react'
 import Header from './_components/Header'
+import Boxes from './_components/Boxes'
 
 
 function DashbordLayout({children}) {
     return (
-        <div>
+        <div className='min-h-screen bg-white'>
             <Header/>
-            {children}
+
+            <daiv className='flex items-center justify-center  '>
+                {children}
+            </daiv>
+            
+            <Boxes/>
         </div>
     )
 }
