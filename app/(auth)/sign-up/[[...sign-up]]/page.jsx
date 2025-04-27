@@ -2,12 +2,18 @@
 
 import * as Clerk from '@clerk/elements/common'
 import * as SignUp from '@clerk/elements/sign-up'
+// import { useRouter } from 'next/navigation'
 
 export default function SignUpPage() {
+  // const router = useRouter();
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl  shadow-2xl"> 
-        <SignUp.Root>
+      <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-2xl  shadow-2xl">
+        <SignUp.Root 
+        //  onSuccess={() => {
+        //   router.push('/dashboard');
+        // }}
+         >
           <SignUp.Step name="start">
             <div className="text-center">
               <h1 className="text-3xl font-bold text-gray-900 mb-2 text-shadow-lg">Sign up</h1>
